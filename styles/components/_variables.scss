@@ -1,0 +1,33 @@
+/*****************/
+/*   variables  **/
+/*****************/
+
+// Colors
+$green: #8DBD1A;
+$blue-dark:rgba(9,9,121,0.8);
+$bg-grey : #FAFAFA;
+$bg-light-grey: #F4F4F4;
+$h-color: #2F2F2F;
+$inactive-link: #A2A9B1;
+$text-grey: hsl(0, 0%, 44%);
+$text-light-grey: hsl(0, 0%, 61%);
+
+// Alerts
+$danger: #e4606d;
+$danger-border: #e44e5d;
+$success:#19875483;
+$success-border:#198754;
+$info: #ffe06670;
+$info-border: #ffe066 1px solid;
+
+// Borders
+$border-standard: 2px solid #dcdcdc;
+$thin-border-bottom: #dcdcdc;
+
+// Text
+$body-font: "lato", sans-serif;
+
+// Predefined Break-points
+$MaxWidth: 1400px;
+$MidWidth: 855px;
+$MinWidth: 660px;

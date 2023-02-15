@@ -1,0 +1,6 @@
+// Generic Overwrites
+
+// Overwrite for Stripe Pricing Table: Hide Buttons
+.Button, .PriceColumn-button, .Button--primary, .Button--lg {
+    display:none !important;
+}

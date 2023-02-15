@@ -1,0 +1,151 @@
+/************************************
+* Text Default Overrides
+************************************/
+h1, h2, h3, h4, h5, h6 {
+	font-family: 'Playfair Display', serif;
+	font-weight:400;
+	font-variant: small-caps;
+}
+
+h1 {
+	font-size:2.4rem;
+	margin-bottom: 0px;
+	@media (max-width: $MidWidth) { 
+		font-size:2rem;
+	}
+}
+h2 {
+	font-size:2rem;
+	text-decoration-thickness: 5px;
+	text-align: center;
+	margin-bottom: 0px;
+	@media (max-width: $MidWidth) { 
+		font-size:2rem;
+	}
+}
+h4 {
+    font-size:20px;
+    margin-bottom:5px;
+}
+p {
+	font-family: 'Roboto', sans-serif;
+	font-style: normal;
+	font-weight: 100;
+	font-size:18px;
+    color:#000000;
+}
+ul > li {
+		font-family: "Lexend";
+		font-style: normal;
+		font-weight: 300 !important;
+		font-size:18px;
+		padding-left: 10px;
+		margin-bottom:10px;
+}
+li::marker {
+	content: url(../images/icons/check.svg);
+	margin-right:10px;
+}
+a {
+	text-decoration: none;
+	color:orangered;
+}
+a:hover {
+	text-decoration: underline;
+}
+
+/************************************
+* Text Custom Styles
+************************************/
+.language {
+	background-color: #e7e7e7;
+	padding:5px 10px;
+	border-radius:5px;
+	margin:0px 2px;
+	color:#888;
+	font-size:14px;
+	border: 1px solid #e7e7e7;
+	transition: color 0.3s;
+	transition: border 0.3s;
+}
+.language:hover {
+	border:1px solid black;
+	color:black;
+	transition: color 0.3s;
+	transition: border 0.3s;
+}
+.langactive {
+	color:black;
+	border:1px solid black;
+}
+.button-active  {
+	border:2px solid black;
+	border-radius: 25px;
+	padding:5px 10px;
+	background-color: #F6DE60;
+	transition: border 0.3s;
+}
+.button-active:hover  {
+	border:2px solid #ba9c00;
+	transition: border 0.3s;
+}
+.strong-link {
+	color:#565656 !important;
+	transition: color 0.4s;
+	font-weight:900;
+	border-bottom: #8dbd1a solid 2px;
+}
+.strong-link:hover {
+	color:#8DBD1A !important;
+	transition: color 0.4s;
+}
+.green-text {
+    color: $green;
+    border-bottom:$green solid 3px;
+}
+.super-excited {
+	font-size:3rem; 
+	font-family: 'Lexend', sans-serif !important; 
+	margin:50px; 
+	text-transform:uppercase; 
+	font-weight:900;
+	@media (max-width:$MidWidth) {
+    font-size: 1.3rem;
+	margin:25px auto;
+	}
+}
+.cta-button {
+	background-color: $green;
+	color: white;
+	padding: 12px 25px;
+	border: none;
+	border-radius: 4px;
+	cursor: pointer; 
+	margin:20px 0px; 
+	font-family:'Lexend', sans-serif;
+	filter: drop-shadow(2px 4px 4px rgba(0, 0, 0, 0.25));
+	transition: filter 0.4s;
+	transition: background-color 0.4s;
+	margin:10px 15px 10px 0px;
+}
+.cta-button:hover {
+	background-color: rgba(7, 50, 98, 0.24);
+	color: white !important;
+}
+
+/**************************/
+/**      Text Slider     **/
+/**************************/
+
+.text-slider {
+color:$green;
+// background-image: linear-gradient(267.91deg,#ff3000 9.35%,#000 96.48%);
+// background-clip: text;
+// -webkit-background-clip: text;
+// -webkit-text-fill-color: transparent;
+// background-clip: border-box;
+// -webkit-background-clip: text;
+}
+.text-slider-items { 
+	display: none; 
+} 

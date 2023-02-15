@@ -1,0 +1,118 @@
+/**************************/
+/**    Navigation Menu   **/
+/**************************/
+.menu {
+	display:flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+	@media (max-width: $MinWidth) { 
+    	flex-direction: column;
+		justify-content: flex-start;
+    }
+}
+
+.menu-logo {
+	align-self: flex-start;
+	@media (max-width: $MinWidth) { 
+    	margin-bottom:25px;
+    }
+}
+.menu-logo img {
+	max-width:250px;
+}
+.menu-navigation {
+	// align-self: flex-end;
+	@media (max-width: $MinWidth) { 
+		display:flex;
+		flex-direction: column;
+    }
+}
+.menu-navigation-ul {
+	list-style-type: none;
+	margin: 0px 25px 0px 0px;
+	padding: 0px;
+	@media (max-width: $MinWidth){ 
+    display:none;
+	flex-direction: column;
+    }
+}
+
+.menu-navigation-ul > li {
+  display: inline;
+  float: left;
+  padding: 5px 0px;
+  font-weight:400 !important;
+  @media (max-width: $MinWidth) { 
+    	display: flex;
+		flex-direction: column;
+		justify-content: flex-start;
+    }
+}
+
+.menu-navigation-ul > li > a {
+	display: block;
+	padding: 4px 8px;
+	margin: 0px 10px;
+	color: black;
+	transition: color 0.4s; 
+	transition: box-shadow 0.4s;
+	@media (max-width:$MinWidth) {
+    	margin:0px;
+		padding:10px 0px;
+	}
+}
+
+.menu-navigation-ul > li > a:hover {
+	// color: #8DBD1A;
+	transition: color 0.4s;
+	box-shadow:0px 4px 0px 0px #F6DE60;
+	transition: box-shadow 0.4s;
+}
+
+.cta-link {
+	color:#8DBD1A !important;
+	font-weight:900;
+}
+.active-link {
+	color:#8DBD1A !important;
+}
+.menu-navigation-container {
+	display:none;
+	@media (max-width: $MinWidth){ 
+    display:block;
+	width:100%;
+	text-align: center;
+	}
+}
+
+/* li.dropdown {
+  display: inline-block;
+} */
+
+.menu-dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  transition: box-shadow 0.4s;
+  z-index: 1;
+}
+
+.menu-dropdown-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  text-align: left;
+}
+
+.menu-dropdown-content a:hover {
+	background-color: #f1f1f1;
+	color: #8dbd1a;
+}
+
+.menu-dropdown:hover .menu-dropdown-content {
+  display: block;
+}

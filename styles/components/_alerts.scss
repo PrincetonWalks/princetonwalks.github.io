@@ -1,0 +1,20 @@
+// Alerts
+.announcement {
+    color:rgba(9,9,121,0.8);
+    background-color:rgba(141, 189, 26, 0.24); 
+    border-radius:10px; 
+    border: 1px solid rgba(9,9,121,0.8); 
+    padding:20px 20px; 
+    text-align: center; 
+    margin: 25px auto 25px; 
+    box-shadow: 2px 2px 1px rgb(106, 106, 106);
+    transition: background-color 0.3s;
+    
+    @media (max-width: $MidWidth) { 
+    margin: 0px auto 25px;
+    }
+}
+.announcement:hover {
+    background-color:rgba(26, 103, 189, 0.24); 
+    transition: background-color 0.3s;
+}

@@ -1,0 +1,131 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!--         Meta          -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="Recommended Systems, LLC">
+    <title>Princeton Walks | Walking Tours of Princeton University, town, and cemetery since 2021</title>
+
+    <!--         Favicons          -->
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+    <link rel="manifest" href="/site.webmanifest">
+    <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#ff9400">
+    <meta name="msapplication-TileColor" content="#ffffff">
+    <meta name="theme-color" content="#ffffff">
+
+    <!--         Fonts         -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400,600&&family=Roboto:wght@100&display=swap" rel="stylesheet">
+
+    <!--        Styles         -->
+    <link rel="stylesheet" href="styles/styles.css">
+    
+    <!--       Scripts         -->
+    <script>
+      function slider(id) {
+        const newimage = document.getElementById(id);
+        const newsrc = newimage.dataset.reference
+        const heroimage = document.getElementById("heroimage");
+        heroimage.setAttribute('src', newsrc);
+      }
+    </script>
+</head>
+
+<!-- ------------------------------------------ -->
+<!--                   BODY                     -->
+<!-- ------------------------------------------ -->
+
+<body>
+    <section logo>
+        <div class="menu">
+          <img src="images/princetonwalks-logo.svg" alt="University building in Princeton, NY">
+          <h1 style="margin:0px;">Прогулки по Принстону</h1>
+          <h4 style="margin:0px;">с 2021<h4>
+          <p style="margin:0px;"><a href="index.html" style="text-decoration: none;"><span id="en" class="language">En</span></a> <span id="ru" class="language langactive">Ру</span></p>
+    </section>
+
+<section body>
+      <!--         Hero          -->
+    <div class="flex-card-box">
+            
+            <div class="flex-card" style="max-width:720px !important; margin:25px auto 0px; border-top:1px solid black; border-radius:0px; padding-top:10px;">
+                <div>
+                  <img id="heroimage" src="images/photos/Princeton-1.jpg" style="max-width:720px;">
+                </div>
+                <div class="slider-images">
+                  <img class="slider-single" id="s1" src="images/photos/Princeton-1.jpg" onclick="slider('s1')" data-reference="images/photos/Princeton-1.jpg">
+                  <img class="slider-single" id="s3" src="images/photos/Princeton-3.jpg" onclick="slider('s3')" data-reference="images/photos/Princeton-3.jpg">
+                   <img class="slider-single" id="s4" src="images/photos/Princeton-4.jpg" onclick="slider('s4')" data-reference="images/photos/Princeton-4.jpg">
+                    <img class="slider-single" id="s5" src="images/photos/Princeton-5.jpg" onclick="slider('s5')" data-reference="images/photos/Princeton-5.jpg">
+                     <img class="slider-single" id="s6" src="images/photos/Princeton-6.jpg" onclick="slider('s6')" data-reference="images/photos/Princeton-6.jpg">
+                </div>
+            </div>
+            
+            <div class="flex-break"></div>
+            
+            <div class="flex-card" style="flex:4;">
+              <h2>Открой для себя Принстон</h2>
+              <p style="width:440px; margin: 10px auto 25px; text-align:center; font-size:14px !important;">Открой для себя историю одного из красивейших городов штата Нью Джерси и одного из старейших университетов Америки. Проводим групповые пешеходные экскурсии.<br><br>↓</p>
+            </div>
+            
+            <div class="flex-break"></div>
+            
+            <div class="flex-card outline" style="flex:4;">
+              <div class="flex-2-col white">
+                <div style="width:100%;display: flex;flex-direction: column;">
+                  <img src="images/icon-uni.svg" class="tour-icon"><br>
+                  <h3 style="text-align: center; margin-top:0px;">Экскурсия по территории университета</h3>
+              </div>
+              </div>
+              <div class="flex-2-col col-content">
+                <p>Узнай историю университета, города Принстон, участие в войне за независимость и история возникновения уникальных обеденных клубов.</p><p> Поговорим об известных людях и как они связаны с университетом и городом. Пешеходная 2,5 часовая экскурсия.</p>
+              </div>
+            </div>
+            
+            <div class="flex-break"></div>
+            
+            <div class="flex-card outline" style="flex:4;">
+              <div class="flex-2-col white">
+                <div style="width:100%;display: flex;flex-direction: column;">
+                  <img src="images/icon-cemetary.svg" class="tour-icon"><br>
+                  <h3 style="text-align: center; margin-top:0px;">Экскурсия по  Принстонскому кладбищу.</h3>
+              </div>
+              </div>
+              <div class="flex-2-col col-content">
+                <p>Принстонское кладбище место погребения Американского президента и вице президента, президентов университета и многих других известных жителей города.</p>
+                <p>А так же мы расскажем о символизме, скрытых значениях в надгробных памятниках и истории захоронений в Америке.</p>
+              </div>
+            </div>
+            
+            <div class="flex-break"></div>
+            
+            <div class="flex-card" style="flex:4;">
+              <h2>Заказ экскурсий:</h2>
+              <p style="width:440px; margin: 10px auto 25px; text-align:center; font-size:14px !important;">Экскурсии проводятся в субботу и воскресенье<br><br>С 9 утра до 5 вечера<br><br>
+              Пишите нам: <a href="mailto:princetonwalks@gmail.com">princetonwalks@gmail.com</a> для заказа экскурсии.</p>
+            </div>
+
+            <div class="flex-break"></div>
+            
+            <div class="flex-card" style="flex:4; border-top:1px solid rgb(161, 161, 161); border-radius:0px;">
+              <p style="font-size: 10px; text-align: center;">&copy; 2023, Princeton Walks, LLC</p>
+            </div>
+            
+            <div class="flex-break"></div>
+            
+    </div>
+  
+  
+</section>
+    
+    
+    
+    
+    
+</body>

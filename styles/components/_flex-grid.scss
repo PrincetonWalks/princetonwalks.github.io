@@ -1,0 +1,122 @@
+/**************************************************/
+/**    Flex-Based Grid, mimicking app css
+/**************************************************/
+
+/* Flex Container */
+.flex-card-box {
+    display:flex;
+    justify-content: flex-start;
+    flex-direction: row; 
+    flex-wrap: wrap;
+    flex-basis: 100%;
+    gap:10px 25px;
+    max-width:1440px;
+    
+    @media (max-width: $MidWidth) { 
+    flex-direction: column;
+    }
+}
+.white {
+    background-color:rgba(235, 235, 235, 0.487);
+    border-radius:10px !important;
+    // box-shadow: #a8a8a880 0px 0px 10px;
+    text-align:left;
+}
+.outline {
+    border-radius:10px !important;
+    border:1px solid black;
+    // box-shadow: #a8a8a880 0px 0px 10px;
+    text-align:left;
+    display: flex;
+    flex-direction: row !important;
+    align-content: center;
+    padding:10px !important;
+}
+.flex-2-col {
+    display:flex; 
+    flex:4;
+    align-content: center;
+    flex-wrap:wrap;
+}
+.col-content {
+    padding:25px; 
+    
+}
+.col-content > p {
+    font-size:14px !important;
+}
+.flex-card, a > .flex-card{
+    // padding:15px 30px;
+    max-width:720px;
+    margin:0 auto;
+    flex:2;
+    // background-color: #fff;
+    border-radius: 5px;
+    display:flex;
+    flex-flow: column wrap;
+    align-items: left;
+    
+    @media (max-width: $MidWidth) and (min-width: $MinWidth)  { 
+        flex-flow: row;
+        row-gap: 25px;
+    }
+    @media (max-width: $MinWidth){ 
+        flex-flow: column;
+        row-gap: 25px;
+        max-width: 90%;
+    }
+    
+    .icon {
+        width:25%;
+        max-width: 25%;
+        
+        @media (max-width: $MidWidth) and (min-width: $MinWidth)  { 
+            width:50%;
+            max-width: 50%;
+            margin-right: 25px;
+        }
+        @media (max-width: $MinWidth){ 
+            width:33%;
+            max-width: 33%;
+            margin: 0 auto;
+        }
+    }
+    p {
+        font-size:18px;
+    }
+}
+
+a:hover > .flex-card {
+    transition: box-shadow 0.5s;
+    box-shadow: 0 .5em 1em -.125em rgba(10,10,10,.6),0 0 0 1px rgba(10,10,10,.02);
+}
+
+.flex-card-heading {
+    display:flex; 
+    flex-direction:row; 
+    align-items:center; 
+    justify-content:left; 
+    border-bottom: 1px solid #000;
+}
+
+.flex-card-content {
+    flex-direction: column;
+    @media (max-width: $MidWidth) and (min-width: $MinWidth) {
+    flex-direction: column;
+    }
+}
+
+.flex-card-hero {
+    @media (max-width: $MidWidth) and (min-width: $MinWidth) {
+    justify-content: center;
+    flex-flow: column wrap;
+    }    
+}
+
+.flex-break {
+    display: flex;
+    flex:12;
+    flex-grow:12;
+    flex-basis: 100%;
+    height: 0;
+}
