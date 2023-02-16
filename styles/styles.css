@@ -858,7 +858,7 @@ input[type=submit]:hover {
 }
 @media (max-width: 855px) {
   .white {
-    padding: 25px 0px;
+    padding: 25px 25px;
     margin-bottom: 0px;
   }
 }
