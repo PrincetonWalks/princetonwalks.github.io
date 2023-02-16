@@ -13,7 +13,25 @@
     max-width:1440px;
     
     @media (max-width: $MidWidth) { 
-    flex-direction: column;
+        flex-direction: column;
+        max-width:100%;
+    }
+}
+
+// SPECIAL FLEX
+
+.flex-hero {
+    max-width:720px !important; 
+    margin:25px auto 0px !important; 
+    border-top:1px solid black; 
+    border-radius:0px; 
+    padding-top:10px;
+    @media (max-width: $MidWidth) { 
+        width:100%;
+        margin:25px auto 0px; 
+        border-top:1px solid black; 
+        border-radius:0px; 
+        padding-top:10px;
     }
 }
 .white {
@@ -21,6 +39,10 @@
     border-radius:10px !important;
     // box-shadow: #a8a8a880 0px 0px 10px;
     text-align:left;
+    @media (max-width: $MidWidth) { 
+        padding:25px 0px;
+        margin-bottom:0px;
+    }
 }
 .outline {
     border-radius:10px !important;
@@ -31,6 +53,23 @@
     flex-direction: row !important;
     align-content: center;
     padding:10px !important;
+    @media (max-width: $MidWidth) { 
+        margin-top:0px !important;
+        flex-direction: column !important;
+    }
+}
+.footer {
+    flex:4; 
+    border-top:1px solid rgb(161, 161, 161); 
+    border-radius:0px;
+    padding:25px;
+    color:rgb(177, 177, 177);
+    font-size: 10px; 
+    text-align: center;
+    @media (max-width: $MidWidth) { 
+        width:100%;
+    }
+    
 }
 .flex-2-col {
     display:flex; 
@@ -40,6 +79,9 @@
 }
 .col-content {
     padding:25px; 
+    @media (max-width: $MidWidth) { 
+        padding: 10px 25px;
+    }
     
 }
 .col-content > p {
@@ -50,20 +92,14 @@
     max-width:720px;
     margin:0 auto;
     flex:2;
-    // background-color: #fff;
-    border-radius: 5px;
     display:flex;
     flex-flow: column wrap;
     align-items: left;
     
-    @media (max-width: $MidWidth) and (min-width: $MinWidth)  { 
-        flex-flow: row;
-        row-gap: 25px;
-    }
-    @media (max-width: $MinWidth){ 
+    @media (max-width: $MidWidth) { 
         flex-flow: column;
-        row-gap: 25px;
         max-width: 90%;
+        margin-top:25px;
     }
     
     .icon {

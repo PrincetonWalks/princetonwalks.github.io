@@ -11,15 +11,21 @@ body {
 	// background-size: contain;
 	
 	@media (max-width: $MidWidth){ 
-    padding:25px;
-	outline-offset: 0px;
     }
 	
 }
-
+#heroimage {
+	max-width:720px;
+	@media (max-width: $MidWidth){
+		max-width:100%;
+	}
+}
 .slider-images {
 	display:inline-flex;
 	max-height:250px;
+	@media (max-width: $MidWidth){
+		max-height:50px;
+	}
 }
 .slider-single {
 	filter: grayscale(1);
@@ -39,6 +45,9 @@ body {
     display: flex;
     width:100%;
 	max-width:1440px;
+	@media (max-width: $MidWidth){
+		max-width:100%;
+	}
     height:100%;
     background: #F3F3F3;
     background-image:url("../images/icons/svg-corner-mask-1.svg");
@@ -54,6 +63,9 @@ body {
 	border-radius: 10px;
 	padding:25px;
 	max-width:1400px;
+	@media (max-width: $MidWidth){
+		max-width:100%;
+	}
 	margin:0 auto;
 	background: #F3F3F3;
     background-image:url("../images/icons/svg-corner-mask-1.svg");

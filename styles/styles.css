@@ -9,16 +9,23 @@ body {
   padding: 25px;
   margin: 0px;
 }
+#heroimage {
+  max-width: 720px;
+}
 @media (max-width: 855px) {
-  body {
-    padding: 25px;
-    outline-offset: 0px;
+  #heroimage {
+    max-width: 100%;
   }
 }
 
 .slider-images {
   display: inline-flex;
   max-height: 250px;
+}
+@media (max-width: 855px) {
+  .slider-images {
+    max-height: 50px;
+  }
 }
 
 .slider-single {
@@ -52,6 +59,11 @@ body {
   margin: 0 auto;
   /* border: 4px solid #000000; */
 }
+@media (max-width: 855px) {
+  .container-body {
+    max-width: 100%;
+  }
+}
 
 .full-container {
   border-radius: 10px;
@@ -65,6 +77,11 @@ body {
   background-size: 170px;
   border-radius: 0px 50px 50px 50px;
   background-repeat: no-repeat;
+}
+@media (max-width: 855px) {
+  .full-container {
+    max-width: 100%;
+  }
 }
 
 section {
@@ -414,11 +431,12 @@ h1, h2, h3, h4, h5, h6 {
   font-family: "Playfair Display", serif;
   font-weight: 400;
   font-variant: small-caps;
+  margin: 0px !important;
 }
 
 h1 {
   font-size: 2.4rem;
-  margin-bottom: 0px;
+  text-align: center;
 }
 @media (max-width: 855px) {
   h1 {
@@ -472,6 +490,18 @@ a {
 
 a:hover {
   text-decoration: underline;
+}
+
+.hero-content {
+  width: 440px;
+  margin: 10px auto 25px;
+  text-align: center;
+  font-size: 14px !important;
+}
+@media (max-width: 855px) {
+  .hero-content {
+    max-width: 100%;
+  }
 }
 
 /************************************
@@ -800,6 +830,24 @@ input[type=submit]:hover {
 @media (max-width: 855px) {
   .flex-card-box {
     flex-direction: column;
+    max-width: 100%;
+  }
+}
+
+.flex-hero {
+  max-width: 720px !important;
+  margin: 25px auto 0px !important;
+  border-top: 1px solid black;
+  border-radius: 0px;
+  padding-top: 10px;
+}
+@media (max-width: 855px) {
+  .flex-hero {
+    width: 100%;
+    margin: 25px auto 0px;
+    border-top: 1px solid black;
+    border-radius: 0px;
+    padding-top: 10px;
   }
 }
 
@@ -807,6 +855,12 @@ input[type=submit]:hover {
   background-color: rgba(235, 235, 235, 0.487);
   border-radius: 10px !important;
   text-align: left;
+}
+@media (max-width: 855px) {
+  .white {
+    padding: 25px 0px;
+    margin-bottom: 0px;
+  }
 }
 
 .outline {
@@ -817,6 +871,27 @@ input[type=submit]:hover {
   flex-direction: row !important;
   align-content: center;
   padding: 10px !important;
+}
+@media (max-width: 855px) {
+  .outline {
+    margin-top: 0px !important;
+    flex-direction: column !important;
+  }
+}
+
+.footer {
+  flex: 4;
+  border-top: 1px solid rgb(161, 161, 161);
+  border-radius: 0px;
+  padding: 25px;
+  color: rgb(177, 177, 177);
+  font-size: 10px;
+  text-align: center;
+}
+@media (max-width: 855px) {
+  .footer {
+    width: 100%;
+  }
 }
 
 .flex-2-col {
@@ -829,6 +904,11 @@ input[type=submit]:hover {
 .col-content {
   padding: 25px;
 }
+@media (max-width: 855px) {
+  .col-content {
+    padding: 10px 25px;
+  }
+}
 
 .col-content > p {
   font-size: 14px !important;
@@ -838,22 +918,15 @@ input[type=submit]:hover {
   max-width: 720px;
   margin: 0 auto;
   flex: 2;
-  border-radius: 5px;
   display: flex;
   flex-flow: column wrap;
   align-items: left;
 }
-@media (max-width: 855px) and (min-width: 660px) {
-  .flex-card, a > .flex-card {
-    flex-flow: row;
-    row-gap: 25px;
-  }
-}
-@media (max-width: 660px) {
+@media (max-width: 855px) {
   .flex-card, a > .flex-card {
     flex-flow: column;
-    row-gap: 25px;
     max-width: 90%;
+    margin-top: 25px;
   }
 }
 .flex-card .icon, a > .flex-card .icon {

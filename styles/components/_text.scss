@@ -5,11 +5,12 @@ h1, h2, h3, h4, h5, h6 {
 	font-family: 'Playfair Display', serif;
 	font-weight:400;
 	font-variant: small-caps;
+	margin:0px !important;
 }
 
 h1 {
 	font-size:2.4rem;
-	margin-bottom: 0px;
+	text-align: center;
 	@media (max-width: $MidWidth) { 
 		font-size:2rem;
 	}
@@ -52,6 +53,15 @@ a {
 }
 a:hover {
 	text-decoration: underline;
+}
+.hero-content {
+	width:440px; 
+	margin: 10px auto 25px; 
+	text-align:center; 
+	font-size:14px !important;
+	@media (max-width: $MidWidth){
+		max-width:100%;
+	}
 }
 
 /************************************
